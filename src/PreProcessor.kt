@@ -1,6 +1,6 @@
 data class PreProcessor (val nameFile : String)
 {
-    private var codigo = ""
+    private lateinit var codigo
 
     init {
         codigo = ManipulateFile().readFileText(nameFile)
